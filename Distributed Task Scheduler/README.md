@@ -23,7 +23,7 @@
 - **Bounded amout of time**
 
 
-## 1. Domain
+## 2. Domain
 
 ### Actors
 - **Client / UI** — submits jobs
@@ -80,7 +80,7 @@ RETRYING      → FAILED    (exhausted)
 
 ---
 
-## 2. HLD
+## 3. HLD
 
 ### NFR
 | Dimension | Target |
@@ -200,7 +200,7 @@ MongoDB down:
 
 ---
 
-## 3. LLD
+## 4. LLD
 
 ### API Design
 
@@ -317,7 +317,7 @@ void onFailure(Job job, boolean retryable) {
 
 ---
 
-## 4. Production
+## 5. Production
 
 > **Pre-submission checklist:**
 > 1. What breaks?
