@@ -6,6 +6,23 @@
 
 ---
 
+## 1.Requirments
+
+### Functional 
+- **Create the task**
+- **Cancel the task**
+- **Execute the task**
+- **Schedule the task**
+- **Status of the task**
+
+### Non Functional 
+- **Availability**
+- **Durability**
+- **Scalability**
+- **Fault Tolerant**
+- **Bounded amout of time**
+
+
 ## 1. Domain
 
 ### Actors
@@ -16,14 +33,14 @@
 ### Job Object
 | Field | Description |
 |---|---|
-| `jobId` | Unique identifier |
-| `jobName` | Human readable name |
-| `jobType` | ONE_TIME · RECURRING |
-| `jobSchedule` | Cron expression or timestamp |
-| `jobTenant` | Tenant identifier — Salesforce org |
-| `jobStatus` | Current state |
-| `jobCurrentRetryCount` | Attempts so far |
-| `jobMaxRetryCount` | Max attempts before DLQ |
+| `taskId` | Unique identifier |
+| `taskName` | Human readable name |
+| `taskType` | ONE_TIME · RECURRING |
+| `taskSchedule` | Cron expression or timestamp |
+| `taskTenant` | Tenant identifier — Salesforce org |
+| `taskStatus` | Current state |
+| `taskCurrentRetryCount` | Attempts so far |
+| `taskMaxRetryCount` | Max attempts before DLQ |
 | `lastFailedTime` | Timestamp of last failure |
 
 ### Configuration (system-level)
